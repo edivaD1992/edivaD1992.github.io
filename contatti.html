@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti | Davide Minetti SEO Specialist</title>
+    <meta name="description" content="Contatta Davide Minetti, SEO specialist con approccio olistico. Compila il modulo per entrare in contatto.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .error-message {
+            color: #e74c3c;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+        
+        .success-message {
+            background-color: #2ecc71;
+            color: white;
+            padding: 1rem;
+            border-radius: var(--border-radius-md);
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .form-control.error {
+            border-color: #e74c3c;
+        }
+        
+        .contact-info {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .contact-info i {
+            color: var(--color-primary);
+            margin-right: var(--spacing-xs);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Davide Minetti</a>
+            </div>
+            
+            <nav class="nav">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="competenze.html" class="nav-link">Competenze</a></li>
+                    <li class="nav-item"><a href="io-e-la-seo.html" class="nav-link">Io e la SEO</a></li>
+                    <li class="nav-item"><a href="contatti.html" class="nav-link active">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-color: var(--color-gray-light);">
+        <div class="container">
+            <div class="grid">
+                <div class="hero-content animate-fade-in">
+                    <h1 class="hero-title">Contatti</h1>
+                    <p class="hero-subtitle">Hai domande sul mio approccio alla SEO o vuoi semplicemente entrare in contatto? Compila il modulo e ti risponderò al più presto.</p>
+                </div>
+                <div class="hero-image animate-fade-in delay-1">
+                    <img src="assets/images/contact-illustration.svg" alt="Illustrazione contatti">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div class="hero-content animate-fade-in" style="grid-column: span 5;">
+                    <h2>Scrivimi</h2>
+                    <p>Compila il modulo sottostante per entrare in contatto. Ti risponderò al più presto.</p>
+                    
+                    <form id="contact-form" class="animate-fade-in delay-1">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome e cognome</label>
+                            <input type="text" id="name" class="form-control" placeholder="Inserisci il tuo nome e cognome">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Inserisci la tua email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Oggetto</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Inserisci l'oggetto del messaggio">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Messaggio</label>
+                            <textarea id="message" class="form-control" placeholder="Scrivi il tuo messaggio"></textarea>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="privacy" class="form-check-input">
+                            <label for="privacy" class="form-check-label">Ho letto e accetto la <a href="#" target="_blank">Privacy Policy</a></label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Invia messaggio</button>
+                    </form>
+                </div>
+                
+                <div class="hero-content animate-fade-in delay-2" style="grid-column: span 7;">
+                    <div class="card" style="height: 100%;">
+                        <h2>Informazioni di contatto</h2>
+                        <p>Preferisci contattarmi in altro modo? Ecco alcune informazioni utili.</p>
+                        
+                        <div class="contact-info">
+                            <h3>Chi sono</h3>
+                            <p>Sono Davide Minetti, SEO specialist con un approccio olistico all'ottimizzazione per i motori di ricerca. Ho gestito oltre 500 progetti come SEO e digital strategist, collaborando con team di sviluppatori, designer e copywriter.</p>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h3>Cosa faccio</h3>
+                            <p>Mi occupo di definizione dell'architettura dell'informazione per siti web SEO oriented, analisi delle parole chiave, ottimizzazione tecnica, analisi e tracciamento dati, progettazione e ottimizzazione e-commerce, SEO locale, Digital PR e molto altro.</p>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h3>Il mio approccio</h3>
+                            <p>Il mio approccio alla SEO è olistico: integro competenze tecniche, analisi dei dati e strategie di contenuto per creare esperienze web che soddisfino sia gli utenti che i motori di ricerca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="section" style="background-color: var(--color-gray-light);">
+        <div class="container">
+            <h2 class="text-center">Privacy e trattamento dei dati</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto var(--spacing-lg);">I dati personali raccolti attraverso questo modulo saranno trattati nel rispetto della normativa sulla privacy.</p>
+            
+            <div class="card animate-fade-in">
+                <h3>Informativa sulla privacy</h3>
+                <p>I dati personali forniti tramite il modulo di contatto saranno utilizzati esclusivamente per rispondere alle tue richieste. Non saranno condivisi con terze parti né utilizzati per scopi commerciali.</p>
+                <p>Il trattamento dei dati avviene nel rispetto del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003 e successive modifiche.</p>
+                <p>Per maggiori informazioni sul trattamento dei tuoi dati personali, puoi consultare la <a href="#">Privacy Policy</a> completa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">Davide Minetti</div>
+                    <p>SEO Specialist con approccio olistico</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a href="index.html" class="footer-nav-link">Home</a></li>
+                        <li class="footer-nav-item"><a href="competenze.html" class="footer-nav-link">Competenze</a></li>
+                        <li class="footer-nav-item"><a href="io-e-la-seo.html" class="footer-nav-link">Io e la SEO</a></li>
+                        <li class="footer-nav-item"><a href="contatti.html" class="footer-nav-link">Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Davide Minetti. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

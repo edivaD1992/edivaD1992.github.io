@@ -1,0 +1,79 @@
+/* Stili aggiuntivi per migliorare l'accessibilità */
+:root {
+  /* Colori per accessibilità */
+  --color-focus-outline: #4299e1;
+  --color-error: #e53e3e;
+  --color-success: #38a169;
+}
+
+/* Miglioramenti per accessibilità */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 3px solid var(--color-focus-outline);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Miglioramenti per contrasto */
+.footer-nav-link {
+  opacity: 1;
+  color: var(--color-white);
+}
+
+/* Miglioramenti per responsività */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Miglioramenti per prestazioni */
+img {
+  content-visibility: auto;
+}
+
+/* Miglioramenti per stampa */
+@media print {
+  .header, .footer, .btn, .hamburger {
+    display: none;
+  }
+  
+  body {
+    color: #000;
+    background: #fff;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+}
